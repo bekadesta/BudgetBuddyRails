@@ -1,0 +1,111 @@
+.dashboard-container {
+  font-family: 'Poppins', sans-serif;
+  padding: 2rem;
+  background-color: #f7f8f4;
+}
+
+.summary-cards {
+  display: flex;
+  gap: 50px;
+  margin-bottom: 2rem;
+  margin-left: 300px;
+}
+
+
+.card {
+  border-radius: 6px;
+  width: 200px;
+  min-height:   100px;
+  text-align: center;
+}
+
+.card h4 {
+  font-size: 0.9rem;
+  margin-bottom: 0.5rem;
+  margin-top: -0.25rem;
+  margin-right: -60px;
+}
+
+.card h3 {
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin-top: 40px;
+  margin-right: 65px;
+
+}
+
+.income {
+  background-color: #a6b68f;
+}
+
+.spending {
+  background-color: #e6ebf2;
+}
+
+.budget {
+  background-color: #e6ebf2;
+}
+
+.dashboard-title {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.spending-breakdown {
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  padding: 1.5rem;
+  max-width: 600px;
+  margin-left: 300px;
+}
+
+.category-summary {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  margin-top: 1rem;
+}
+
+.bars {
+  display: flex;
+  align-items: flex-end; /* So bars grow upward */
+  gap: 10px;
+  height: 100px; /* Important: gives reference for % heights */
+}
+
+.bar {
+  width: 40px;
+  background-color: grey;
+  transition: height 0.4s ease;
+}
+
+.greeting {
+  font-size: 1.5rem;
+  margin-left: 21%;
+  margin-bottom: 1rem;
+}
+.bar-labels {
+  /* display: flex;
+  justify-content: space-between;
+  gap: 40px;
+  text-align: center;
+  font-weight: bold; */
+    display: flex;
+  justify-content: space-between;
+  font-size: 14px;
+}
+
+.input-btn {
+  margin-top: 1.5rem;
+  padding: 10px 20px;
+  background-color: #a6b68f;
+  border: none;
+  border-radius: 4px;
+  font-weight: bold;
+  cursor: pointer;
+  margin-left: 212px;
+}
+
+.dashboard-title {
+  margin-left: 21%;
+}

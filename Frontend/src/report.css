@@ -1,0 +1,25 @@
+.summary-section {
+  display: flex;
+  gap: 1rem;
+}
+.summary-box {
+  flex: 1;
+  padding: 1rem;
+  border-radius: 8px;
+}
+.need { background-color: #ffcccb; }
+.want { background-color: #ffe4b5; }
+.saving { background-color: #d3f8e2; }
+
+.notes-section {
+  margin-top: 2rem;
+}
+.note-card {
+  border: 1px solid #ccc;
+  padding: 1rem;
+  margin-bottom: 1rem;
+  border-radius: 6px;
+}
+.note-card.need { border-left: 6px solid #ff7f7f; }
+.note-card.want { border-left: 6px solid #fbc531; }
+.note-card.saving { border-left: 6px solid #4cd137; }
