@@ -1,0 +1,189 @@
+/* Global Styles */
+body {
+  margin: 0;
+  font-family: 'Inter', sans-serif;
+  background-color: #f0f2f5;
+}
+
+/* Center the container */
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-color: pink;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+/* Card holds both panels side-by-side */
+.card {
+  display: flex;
+  flex-direction: row;
+  background-color: white;
+  border-radius: 15px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  max-width: 900px;
+  min-height: 600px;
+  margin-left: -790px;
+  transition: all 0.3s ease-in-out;
+}
+
+/* Both panels */
+.panel {
+  flex: 1;
+  padding: 110px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  transition: all 0.5s ease;
+  opacity: 1;
+  transform: translateX(0);
+}
+
+/* Panel base colors */
+
+.right-panel {
+  background-color: indianred;
+  padding: 150px;
+}
+
+.left-panel {
+  background-color: whitesmoke;
+}
+
+/* When inactive, fade and shrink */
+.left-panel:not(.active),
+.right-panel:not(.active) {
+  opacity: 0.4;
+  pointer-events: none;
+  transform: scale(0.98);
+}
+
+/* Titles and Headings */
+.heading {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.welcome-heading {
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.welcome-text {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  margin-bottom: 30px;
+  color: #555;
+}
+
+/* Icons */
+.social-icons {
+  display: flex;
+  gap: 15px;
+  margin-bottom: 20px;
+}
+
+.icon {
+  text-decoration: none;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  border: 1px solid #ddd;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.2rem;
+  background-color: white;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+  color: #333;
+  cursor: pointer;
+}
+
+/* Text */
+.or-text {
+  font-size: 0.9rem;
+  color: #666;
+  margin-bottom: 25px;
+}
+
+/* Form Styling */
+.form {
+  width: 100%;
+  max-width: 300px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.input-group {
+  width: 100%;
+  margin-bottom: 15px;
+  position: relative;
+}
+
+.input-group input ::placeholder {
+  background-color: #999;
+}
+.input-icon {
+  position: absolute;
+  left: 15px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #999;
+  margin-left: -3px;
+  font-size: 1rem;
+}
+
+input {
+  width: 300px;
+  border-radius: 8px;
+  border: 1px solid #ddd;
+  font-size: 1rem;
+  box-sizing: border-box;
+  outline: none;
+}
+
+/* Buttons */
+.btn {
+  color: white;
+  padding: 12px 40px;
+  border-radius: 8px;
+  border: none;
+  font-size: 1.1rem;
+  font-weight: bold;
+  cursor: pointer;
+  margin-top: 20px;
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.signup {
+  background-color: #8BC34A;
+  box-shadow: 0 4px 10px rgba(139, 195, 74, 0.3);
+}
+
+.signin {
+  background-color: #333;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .card {
+    flex-direction: column;
+    min-height: auto;
+  }
+
+  .left-panel,
+  .right-panel {
+    opacity: 1 !important;
+    transform: none !important;
+    pointer-events: auto !important;
+  }
+}

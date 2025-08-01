@@ -1,0 +1,49 @@
+.daily-income-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 100px;
+    gap: 1rem;
+  }
+  
+  .daily-income-label{
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #333;
+    
+
+
+
+
+
+  }
+
+  .daily-income-input {
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+    border: 1px solid #beb6b6;
+    border-radius: 6px;
+    width: 200px;
+  }
+  
+  .daily-income-label {
+    font-size: 1.2rem;
+    font-weight: 500;
+    color: #333;
+  }
+  
+  .next-button {
+    padding: 0.5rem 1.2rem;
+    font-size: 1rem;
+    background-color: #cbd3db;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .next-button:hover {
+    background-color: #696d72;
+  }
+  
